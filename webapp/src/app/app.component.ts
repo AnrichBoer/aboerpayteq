@@ -17,7 +17,7 @@ import { DatabaseUsersModel } from '../assets/models/UserModel/users.model';
     HttpClientModule 
   ],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrl: './app.component.scss' //styleUtls: ?
 })
 export class AppComponent {
 

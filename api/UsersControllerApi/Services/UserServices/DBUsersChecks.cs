@@ -18,11 +18,11 @@ namespace BaseProjectApi.Services.UserService
         {
             try
             {
-                _sql = $"SELECT * FROM users WHERE UserId = '{userId}'";
+                _sql = $"SELECT * FROM users WHERE UserId = '{userId}'"; //looks like the userid is correct here when debugging
                 var checkRes = await _dbms.SqlFecthCommand(_sql);
 
-                var readerObj = checkRes.Payload;
-                if (readerObj.HasRows)
+                var readerObj = checkRes.Payload; 
+                if (readerObj.HasRows) // Exception here when I click on Register... I think my db connection is not working - or I'm using the incortect approach for DB...regsistering is not even saving anything into db 
                 {
                     _result.Code = 500;
                     _result.Status = false;

@@ -52,7 +52,7 @@ namespace UserController
                 app.UseSwaggerUI();
             }
 
-            //app.UseHttpsRedirection(); //Why is this commented out?
+            app.UseHttpsRedirection(); //was commented out 
             app.UseStaticFiles();
             app.UseCors("CorsPolicy");
             app.UseRouting(); // Enable routing for HTTP requests

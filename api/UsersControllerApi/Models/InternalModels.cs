@@ -64,7 +64,7 @@
 
     }
 
-    public class UserLoginModel
+    public class UserLoginModel //looks good 
     {
         public string UserName { get; set; }
         public string Password { get; set; }

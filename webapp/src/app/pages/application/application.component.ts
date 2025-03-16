@@ -34,7 +34,7 @@ export class AppPagesApplicationComponent {
 
   constructor() {
     this.MenuDisplay = this.MainMenu;
-    // this.DisplayPage = "Operators";
+    this.DisplayPage = "Operators"; //this was commented out
 
     // JABS Dev Remove this
     this.MenuDisplay = this.AdminMenu;

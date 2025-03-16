@@ -6,7 +6,7 @@ namespace BaseProjectApi.Services.UserServices
     {
         Task<ServiceModel> RegisterUser(RequestModel uireq);
         Task<ServiceModel> UserLogin(RequestModel uireq);
-        Task<ServiceModel> GetSingleUser(RequestModel UserName); // why is this parameter named UserName?
+        Task<ServiceModel> GetSingleUser(RequestModel UserName); 
         Task<ServiceModel> GetAllUsers(RequestModel uireq);
         Task<ServiceModel> UpdateUser(RequestModel uireq);
         Task<ServiceModel> DeleteSingleUser(RequestModel uireq);

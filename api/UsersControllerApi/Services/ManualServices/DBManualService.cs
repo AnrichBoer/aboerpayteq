@@ -15,7 +15,7 @@ namespace BaseProjectApi.Services.ManualServices
         {
             _configuration = configuration;
             _result = new ServiceModel();
-            _dbresult = new DBServiceModel<SqlDataReader>();
+            _dbresult = new DBServiceModel<SqlDataReader>(); //should I be using the obsolete sqldatareader...
             _connectionString = _configuration.GetValue<string>("ConnectionStrings:DefaultConnection");
         }            
 
@@ -43,7 +43,7 @@ namespace BaseProjectApi.Services.ManualServices
             {
                 _result.Code = 500;
                 _result.Status = false;
-                _result.Message = "AddNewShiptoDatabase() Exception: " + ex.Message;
+                _result.Message = "AddNewShiptoDatabase() Exception: " + ex.Message; //add new ship? 
 
             }
 
